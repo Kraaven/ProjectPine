@@ -1,2 +1,5 @@
-Hello
-My name is Dhruv
+PUSH 2 MEM4
+PUSH 8 MEM0
+PUSH 12 MEM1
+PUSH 5 MEM4
+PUSH 7 MEM7

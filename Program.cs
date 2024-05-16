@@ -5,6 +5,8 @@ namespace ProjectPine
 {
     class Program
     {
+
+        static int[] LanguageMemory = {0,0,0,0,0,0,0,0};
         static void Main(string[] args)
         {
             Console.WriteLine(@"______  _                _____              _         _   ");
@@ -37,7 +39,7 @@ namespace ProjectPine
                         string line;
                         while ((line = sr.ReadLine()) != null)
                         {
-                            Console.WriteLine(line);
+                            Interpret(line);
                         }
                     }
                     Console.ReadKey(true);
@@ -50,6 +52,93 @@ namespace ProjectPine
 
                 return;
             }
+        }
+    
+        static void Interpret(string Instruction){
+            Console.WriteLine("------");
+            string[] KeyWords = Instruction.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            switch (KeyWords[0]){
+                case "PUSH":
+                    int Num = 0;
+                    Num = int.Parse(KeyWords[1]);
+                    int Mem = 0;
+                    Mem = GetMemoryIndex(KeyWords[2]);
+                    if(Mem != -1){
+                        Console.WriteLine("Pushed " + Num + $" --> [{Mem}]");
+                        LanguageMemory[Mem] = Num;
+                        PrintMemory();
+                    }
+                    else{
+                        Console.WriteLine("INVALID SYNTAX");
+                        break;
+                    }
+                    break;
+                
+                case "COPY":
+                    int ML1  = GetMemoryIndex(KeyWords[1]);
+                    int ML2 = GetMemoryIndex(KeyWords[2]);
+
+                    if(ML1 == -1 || ML2 == -1){
+                        break;
+                    }
+                    else{
+                        LanguageMemory[ML2] = LanguageMemory[ML1];
+                        Console.WriteLine($"[{ML1}]"+ " ==> "+ $"[{ML2}]");
+                        PrintMemory();
+                        break;
+                    }
+                
+                case "PRINT":
+                    int ML = GetMemoryIndex(KeyWords[1]);
+                    if(ML == -1){
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine($">> {LanguageMemory[ML]}");
+                        PrintMemory();
+                    }
+                    break;
+                
+                case "ADD":
+                    int MLA1 = GetMemoryIndex(KeyWords[1]);
+                    int MLA2 = GetMemoryIndex(KeyWords[2]);
+
+                    if(MLA1 == -1 || MLA2== -1){
+                        break;
+                    }
+                    else {
+                        Console.WriteLine($"{LanguageMemory[MLA1]}:[{MLA1}] + {LanguageMemory[MLA2]}:[{MLA2}] --> [{MLA2}]");
+                        LanguageMemory[MLA2] += LanguageMemory[MLA1];
+                        PrintMemory();
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Key Does not exist");
+                    break;
+            }
+        }
+
+        static int GetMemoryIndex(string keycode){
+            if(keycode.Length != 4){
+                return -1;
+            }
+            else{
+                if(keycode[0] == 'M' && keycode[1] == 'E' && keycode[2] == 'M'){
+                    return int.Parse(keycode[3].ToString());
+                }
+                else{
+                    return -1;
+                }
+            }
+        
+            return 1;
+        }
+
+        static void PrintMemory(){
+            Console.WriteLine($"+---+---+---+---+---+---+---+---+\n| {LanguageMemory[0]} | {LanguageMemory[1]} | {LanguageMemory[2]} | {LanguageMemory[3]} | {LanguageMemory[4]} | {LanguageMemory[5]} | {LanguageMemory[6]} | {LanguageMemory[7]} |\n+---+---+---+---+---+---+---+---+");
         }
     }
 }

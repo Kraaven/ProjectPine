@@ -1,2 +1,4 @@
-Hello
-My name is Dhruv
+PUSH 1 MEM0
+PUSH 2 MEM1
+ADD MEM0 MEM1
+PRINT MEM1
