@@ -1,0 +1,5 @@
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\publish\ProjectPine.exe
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\publish\ProjectPine.dll
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\publish\ProjectPine.deps.json
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\publish\ProjectPine.runtimeconfig.json
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\publish\ProjectPine.pdb

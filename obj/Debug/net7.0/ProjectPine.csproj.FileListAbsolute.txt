@@ -1,0 +1,14 @@
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Debug\net7.0\ProjectPine.exe
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Debug\net7.0\ProjectPine.deps.json
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Debug\net7.0\ProjectPine.runtimeconfig.json
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Debug\net7.0\ProjectPine.dll
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Debug\net7.0\ProjectPine.pdb
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.AssemblyInfoInputs.cache
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.AssemblyInfo.cs
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.csproj.CoreCompileInputs.cache
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.dll
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\refint\ProjectPine.dll
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.pdb
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ProjectPine.genruntimeconfig.cache
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\obj\Debug\net7.0\ref\ProjectPine.dll
