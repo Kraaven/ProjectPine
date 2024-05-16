@@ -55,7 +55,7 @@ namespace ProjectPine
         }
     
         static void Interpret(string Instruction){
-            Console.WriteLine("------");
+            //Console.WriteLine("------");
             string[] KeyWords = Instruction.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             switch (KeyWords[0]){
@@ -65,9 +65,9 @@ namespace ProjectPine
                     int Mem = 0;
                     Mem = GetMemoryIndex(KeyWords[2]);
                     if(Mem != -1){
-                        Console.WriteLine("Pushed " + Num + $" --> [{Mem}]");
+                        Console.WriteLine(">> " + Num + $" --> [{Mem}]");
                         LanguageMemory[Mem] = Num;
-                        PrintMemory();
+                        //PrintMemory();
                     }
                     else{
                         Console.WriteLine("INVALID SYNTAX");
@@ -84,8 +84,8 @@ namespace ProjectPine
                     }
                     else{
                         LanguageMemory[ML2] = LanguageMemory[ML1];
-                        Console.WriteLine($"[{ML1}]"+ " ==> "+ $"[{ML2}]");
-                        PrintMemory();
+                        Console.WriteLine($">> [{ML1}]"+ " ==> "+ $"[{ML2}]");
+                        //PrintMemory();
                         break;
                     }
                 
@@ -97,7 +97,7 @@ namespace ProjectPine
                     else
                     {
                         Console.WriteLine($">> {LanguageMemory[ML]}");
-                        PrintMemory();
+                        //PrintMemory();
                     }
                     break;
                 
@@ -109,10 +109,14 @@ namespace ProjectPine
                         break;
                     }
                     else {
-                        Console.WriteLine($"{LanguageMemory[MLA1]}:[{MLA1}] + {LanguageMemory[MLA2]}:[{MLA2}] --> [{MLA2}]");
+                        Console.WriteLine($">> {LanguageMemory[MLA1]}:[{MLA1}] + {LanguageMemory[MLA2]}:[{MLA2}] --> [{MLA2}]");
                         LanguageMemory[MLA2] += LanguageMemory[MLA1];
-                        PrintMemory();
+                        //PrintMemory();
                     }
+                    break;
+                
+                case "SHOW":
+                    PrintMemory();
                     break;
 
                 default:
