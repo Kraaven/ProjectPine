@@ -1,0 +1,2 @@
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\linux-x64\publish\ProjectPine.pdb
+C:\Users\dhruv\OneDrive\Desktop\Programing languages\Learning C#\ProjectPine\bin\Release\net7.0\linux-x64\publish\ProjectPine
